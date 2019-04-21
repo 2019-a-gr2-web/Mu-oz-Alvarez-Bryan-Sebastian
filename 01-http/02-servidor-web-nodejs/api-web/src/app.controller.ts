@@ -37,9 +37,11 @@ class usuario{
     this.atributoPrivado=atributoPrivado;
     this.atributoProtegido=atributoProtegido;
   }
+
   @MetodoA()
   public metodoPublico(@ParametroA() a){}
   @MetodoB()
   private metodoPrivado(){}
   protected metodoProtegido(){}
+
 }*/
