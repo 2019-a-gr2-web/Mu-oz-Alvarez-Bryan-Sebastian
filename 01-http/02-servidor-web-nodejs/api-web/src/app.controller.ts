@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get() //Se define el metodo HTTP
+  @Get() //Se define el metodo HTTP GET
   getHello(): string {
     return this.appService.getHello();
   }
@@ -37,9 +37,11 @@ class usuario{
     this.atributoPrivado=atributoPrivado;
     this.atributoProtegido=atributoProtegido;
   }
+
   @MetodoA()
   public metodoPublico(@ParametroA() a){}
   @MetodoB()
   private metodoPrivado(){}
   protected metodoProtegido(){}
+
 }*/
