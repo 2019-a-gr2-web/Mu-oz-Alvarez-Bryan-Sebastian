@@ -10,7 +10,6 @@ export class AppController {
     return this.appService.getHello();
   }
 
-
   @Post()
   @HttpCode(200)
   postHello(): string {
