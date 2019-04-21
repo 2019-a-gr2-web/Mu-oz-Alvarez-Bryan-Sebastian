@@ -20,8 +20,6 @@ export class AppController {
 
 
 
-
-
 /*
 @NombreDecoradorClase() //Decorador->funcion
 class usuario{
