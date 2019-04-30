@@ -364,7 +364,7 @@ const arregloNumeros = [1, 2, 3, 4, 5, 6];
 
 // 1) Impriman en consola todos los elementos
 
-const arregloNumerosForEach = [1, 2, 3, 4, 5, 6];
+const arregloNumerosForEach = [1, 2, 3, 4, 5, 6]; //
 
 const rForEach = arregloNumerosForEach
     .forEach(
@@ -426,10 +426,90 @@ const rFilter = arregloNumerosFilter
 console.log(`Respuesta FILTER: ${rFilter}`);
 
 // 5) TODOS los valores positivos
+
+const arregloNumerosEvery= [1, 2, 3, 4, 5, 6];
+const respuestaEvery = arregloNumerosEvery.every(
+        //Si todos cumplen True
+        //Si alguno no cumple False
+        callbackfn: (valorActual)=>{
+            return valorActual > 0
+        }
+    );
+
+console.log(respuestaEvery);
+
+
+
 // 6) ALGUN valor es menor que 2
+
+const arregloNumerosSome= [1, 2, 3, 4, 5, 6];
+arregloNumerosSome.some(
+    //Si alguno  cumplen True
+    //Si alguno no cumple False
+    callbackfn: (valorActual)=>{
+    return valorActual < 2
+    }
+);
+
+console.log(respuestaSome);
+
+
+
+
 // 7) Sumen todos los valores
+
+const arregloNumerosReduce= [1, 2, 3, 4, 5, 6];
+const valorDondeEmpiezaCalculo = 0;
+const respuestaReduce = arregloNumerosReduce.reduce(
+        (acumulado, valorActual)=>{
+        return acumulado + valorActual;
+},
+    valorDondeEmpiezaCalculo
+
+);
+
+console.log(respuestaReduce);
+
+
+//ejemplo en clase
+
+const arregloNumerosReduce= [1, 2, 3, 4, 5, 6];
+const valorDondeEmpiezaCalculo = 0;
+const respuestaReduce = arregloNumerosReduce.reduce(
+    (acumulado, valorActual)=>{
+        if(valorActual<4){
+            return acumulado + valorActual*1.1 +5;
+        } else{
+            return acumulado + valorActual*1.15 + 3;;
+    },
+    valorDondeEmpiezaCalculo
+);
+console.log(respuestaReduce);
+
+
 // 8) Resten todos los valores de 100
 
+const arregloNumerosCien= [1, 2, 3, 4, 5, 6];
+const valorDondeEmpiezaCalculo = 100;
+const respuestaCien = arregloNumerosCIen.reduce(
+    (acumulado, valorActual)=>{
+            return acumulado - valorActual;
+        },
+        valorDondeEmpiezaCalculo
+    );
+console.log(respuestaReduce);
+
+
+
+const arregloEjercicio = [1, 2, 3, 4, 5, 6];
+    arregloEjercicio
+        .map(callbackfn: (valorActual)=>{
+        return  valorActual + 10;})
+        .filter(callbackfn;(valorActual)=>{
+            return valorActual > 15;
+
+})
+}
 
 // 1.1) Sumen 10 a todos
 // 1.2) Filtren a los mayores a 15
