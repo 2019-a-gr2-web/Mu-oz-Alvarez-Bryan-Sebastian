@@ -1,4 +1,10 @@
-import {Controller, Get, HttpCode, Post, Put, Delete,
+import {
+    Controller,
+    Get,
+    HttpCode,
+    Post,
+    Put,
+    Delete,
     Headers,
     Query,
     Param,
@@ -161,11 +167,26 @@ export class AppController {
     }
 
 
-    @Get('inicio')
+    @Get('inicio') // endpoint
     inicio(
         @Response() res
     ) {
-        return res.render('inicio');
+        return res.render(
+            'inicio',
+            {
+                estaVivo: false
+            });
+    }
+
+    @Get('peliculas')
+    peliculas(
+        @Response() res
+    ) {
+        return res.render(
+            'peliculas/inicio',
+            {
+
+            });
     }
 
 
@@ -364,7 +385,7 @@ const arregloNumeros = [1, 2, 3, 4, 5, 6];
 
 // 1) Impriman en consola todos los elementos
 
-const arregloNumerosForEach = [1, 2, 3, 4, 5, 6]; //
+const arregloNumerosForEach = [1, 2, 3, 4, 5, 6];
 
 const rForEach = arregloNumerosForEach
     .forEach(
@@ -405,7 +426,7 @@ const arregloNumerosFind = [1, 2, 3, 4, 5, 6];
 
 const rFind = arregloNumerosFind
     .find( // CONDICION para devolver ese ELEMENTO
-        (valorActual)=>{
+        (valorActual) => {
             return valorActual == 4;
         }
     );
@@ -419,98 +440,87 @@ const arregloNumerosFilter = [1, 2, 3, 4, 5, 6];
 const rFilter = arregloNumerosFilter
     .filter(  // CONDICION TRUE  -> Agrega al arreglo
         //       CONDICION FALSA -> Se omite del arreglo
-        (valorActual)=>{
+        (valorActual) => {
             return valorActual < 5;
         }
     );
 console.log(`Respuesta FILTER: ${rFilter}`);
 
-// 5) TODOS los valores positivos
+// 5) TODOS los valores positivos TRUE FALSE
 
-const arregloNumerosEvery= [1, 2, 3, 4, 5, 6];
-const respuestaEvery = arregloNumerosEvery.every(
-        //Si todos cumplen True
-        //Si alguno no cumple False
-        callbackfn: (valorActual)=>{
+const arregloNumerosEvery = [1, 2, 3, 4, 5, 6];
+
+const respuestaEvery = arregloNumerosEvery // AND
+    .every(  // si TODOS cumplen TRUE
+        // si ALGUNO no cumple FALSE
+        (valorActual) => {
             return valorActual > 0
         }
     );
-
-console.log(respuestaEvery);
-
-
+console.log(respuestaEvery);  // TRUE
 
 // 6) ALGUN valor es menor que 2
 
-const arregloNumerosSome= [1, 2, 3, 4, 5, 6];
-arregloNumerosSome.some(
-    //Si alguno  cumplen True
-    //Si alguno no cumple False
-    callbackfn: (valorActual)=>{
-    return valorActual < 2
-    }
-);
+const arregloNumerosSome = [1, 2, 3, 4, 5, 6];
 
-console.log(respuestaSome);
-
-
-
+arregloNumerosSome
+    .some( // si ALGUNO cumple la condicion TRUE!!
+        // si TODOS no cumplen FALSE!!
+        (valorActual) => {
+            return valorActual < 2
+        }
+    );
 
 // 7) Sumen todos los valores
 
-const arregloNumerosReduce= [1, 2, 3, 4, 5, 6];
+const arregloNumerosReduce = [1, 2, 3, 4, 5, 6];
 const valorDondeEmpiezaCalculo = 0;
+
+// < 4
+// 10% + 5
+// >= 4
+// 15% + 3
 const respuestaReduce = arregloNumerosReduce.reduce(
-        (acumulado, valorActual)=>{
-        return acumulado + valorActual;
-},
-    valorDondeEmpiezaCalculo
-
-);
-
-console.log(respuestaReduce);
-
-
-//ejemplo en clase
-
-const arregloNumerosReduce= [1, 2, 3, 4, 5, 6];
-const valorDondeEmpiezaCalculo = 0;
-const respuestaReduce = arregloNumerosReduce.reduce(
-    (acumulado, valorActual)=>{
-        if(valorActual<4){
-            return acumulado + valorActual*1.1 +5;
-        } else{
-            return acumulado + valorActual*1.15 + 3;;
+    (acumulado, valorActual) => {
+        if (valorActual < 4) {
+            return acumulado + valorActual * 1.1 + 5;
+        } else {
+            return acumulado + valorActual * 1.15 + 3;
+        }
     },
-    valorDondeEmpiezaCalculo
-);
-console.log(respuestaReduce);
+    valorDondeEmpiezaCalculo);
+console.log(respuestaReduce); // 21
 
 
 // 8) Resten todos los valores de 100
 
-const arregloNumerosCien= [1, 2, 3, 4, 5, 6];
-const valorDondeEmpiezaCalculo = 100;
-const respuestaCien = arregloNumerosCIen.reduce(
-    (acumulado, valorActual)=>{
-            return acumulado - valorActual;
-        },
-        valorDondeEmpiezaCalculo
-    );
-console.log(respuestaReduce);
+const arregloNumerosCien = [1, 2, 3, 4, 5, 6];
+const valorDondeEmpiezaCien = 100;
 
+const respuestaCien = arregloNumerosCien.reduce(
+    (acumulado, valorActual) => {
+        return acumulado - valorActual;
+    },
+    valorDondeEmpiezaCien);
+console.log(respuestaCien); // 79
 
 
 const arregloEjercicio = [1, 2, 3, 4, 5, 6];
-    arregloEjercicio
-        .map(callbackfn: (valorActual)=>{
-        return  valorActual + 10;})
-        .filter(callbackfn;(valorActual)=>{
-            return valorActual > 15;
 
-})
-}
+arregloEjercicio
+    .map((valorActual) => {
+        return valorActual + 10; // suma 10
+    })
+    .filter(
+        (valorActual) => {
+            return valorActual > 15; // > 15
+        }
+    )
+    .some(
+        (valorActual) => {
+            return valorActual > 30; // > 30
+        });
 
-// 1.1) Sumen 10 a todos
+// 1.1) Sumen 10 a todos los elementos
 // 1.2) Filtren a los mayores a 15
 // 1.3) Si hay algun numero mayor a 30
