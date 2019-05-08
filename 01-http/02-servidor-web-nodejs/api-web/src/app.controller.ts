@@ -190,6 +190,15 @@ export class AppController {
     }
 
 
+    @Get('estilos')
+    estilos(
+        @Response() res
+    ) {
+        return res.render(
+            'peliculas/estilos');
+    }
+
+
     // js -> ts
 
 
@@ -524,3 +533,16 @@ arregloEjercicio
 // 1.1) Sumen 10 a todos los elementos
 // 1.2) Filtren a los mayores a 15
 // 1.3) Si hay algun numero mayor a 30
+
+
+
+
+
+
+
+
+
+
+
+
+
