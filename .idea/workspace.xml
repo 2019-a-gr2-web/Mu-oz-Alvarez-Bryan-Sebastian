@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="063517b7-6c5c-4db6-ae64-05c2f1d58a20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Mu-oz-Alvarez-Bryan-Sebastian.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/eguez-sarzosa-vicente-adrian.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/01-servidor-web-estatico/fin.html" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/01-servidor-web-estatico/fin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/01-servidor-web-estatico/imagenes/Captura de pantalla (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/01-servidor-web-estatico/imagenes/Captura de pantalla (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/01-servidor-web-estatico/imagenes/Captura de pantalla (3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/01-servidor-web-estatico/imagenes/Captura de pantalla (4).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/01-servidor-web-estatico/imagenes/Captura de pantalla (5).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/01-servidor-web-estatico/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/01-servidor-web-estatico/inicio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/01-servidor-web-estatico/pdf/1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/nest-cli.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/nodemon-debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/nodemon-debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/nodemon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/test/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/test/jest-e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/test/jest-e2e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/tsconfig.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/tsconfig.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/desktop.ini" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new 1.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,43 +18,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts">
+        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/peliculas/inicio.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#174#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="714">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/peliculas/inicio.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/ejemplo.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/main.ts">
+        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/inicio.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -116,7 +64,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -137,53 +85,56 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
           <expand>
             <path>
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="462c0819:PsiDirectoryNode" />
+              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Sebastian\Documents\GitHub\Mu-oz-Alvarez-Bryan-Sebastian" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="462c0819:PsiDirectoryNode" />
-              <item name="01-http" type="462c0819:PsiDirectoryNode" />
+              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Sebastian\Documents\GitHub\Mu-oz-Alvarez-Bryan-Sebastian" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="01-http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="462c0819:PsiDirectoryNode" />
-              <item name="01-http" type="462c0819:PsiDirectoryNode" />
-              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Sebastian\Documents\GitHub\Mu-oz-Alvarez-Bryan-Sebastian" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="01-http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="02-servidor-web-nodejs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="462c0819:PsiDirectoryNode" />
-              <item name="01-http" type="462c0819:PsiDirectoryNode" />
-              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
-              <item name="api-web" type="462c0819:PsiDirectoryNode" />
+              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Sebastian\Documents\GitHub\Mu-oz-Alvarez-Bryan-Sebastian" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="01-http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="02-servidor-web-nodejs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="api-web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="462c0819:PsiDirectoryNode" />
-              <item name="01-http" type="462c0819:PsiDirectoryNode" />
-              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
-              <item name="api-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Sebastian\Documents\GitHub\Mu-oz-Alvarez-Bryan-Sebastian" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="01-http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="02-servidor-web-nodejs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="api-web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="462c0819:PsiDirectoryNode" />
-              <item name="Vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="Mu-oz-Alvarez-Bryan-Sebastian" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Sebastian\Documents\GitHub\Mu-oz-Alvarez-Bryan-Sebastian" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="01-http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="02-servidor-web-nodejs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="api-web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,12 +181,15 @@
       <workItem from="1555528479816" duration="7648000" />
       <workItem from="1556046438507" duration="6080000" />
       <workItem from="1556133361596" duration="1981000" />
-      <workItem from="1557256671572" duration="5811000" />
+      <workItem from="1557256671572" duration="6246000" />
+      <workItem from="1557343257677" duration="100000" />
+      <workItem from="1557343583668" duration="478000" />
+      <workItem from="1557344105315" duration="87000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33330000" />
+    <option name="totallyTimeSpent" value="34430000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -248,9 +202,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16964285" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29985118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -263,8 +216,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.7851711" visible="true" weight="0.2618658" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2148289" side_tool="true" weight="0.6895161" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.78348213" visible="true" weight="0.26022914" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.21651785" side_tool="true" visible="true" weight="0.26022914" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -327,38 +280,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/peliculas/inicio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seno.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coseno.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/inicio.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/peliculas/inicio.html" />
+    <entry file="file://$PROJECT_DIR$/seno.txt" />
+    <entry file="file://$PROJECT_DIR$/coseno.txt" />
     <entry file="file://$PROJECT_DIR$/Vistas/.gitkeep.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/ejemplo.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -377,10 +303,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/peliculas/inicio.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="714">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/inicio.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
