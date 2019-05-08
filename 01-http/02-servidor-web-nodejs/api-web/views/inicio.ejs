@@ -2,10 +2,25 @@
 <% const nombre = 'Eguez';  // codigo JS %>
 <%= nombre %>
 <% const arreglo = [1,2,3,4,5]; %>
+<% const objeto = {nombre:'Adrian'}; %>
+<%= objeto %>
+
+<% arreglo.forEach((valorActual)=>{ %>
+  <p> Numero: <%= valorActual %> </p>
+<% })%>
+
+<ol>
+<% arreglo.forEach((valorActual)=>{ %>
+    <li> Numero: <%= valorActual %> </li>
+<% })%>
+</ol>
 
 <% if(estaVivo){%>
-    <h1>ESTAAA VIVOOO!!! </h1>
+  <h1>ESTAAA VIVOOo!!! </h1>
 <% } else { %>
-    <h1>C murio :(  </h1>
+  <h1>C murio :(  </h1>
 <% }%>
+
+
+
 

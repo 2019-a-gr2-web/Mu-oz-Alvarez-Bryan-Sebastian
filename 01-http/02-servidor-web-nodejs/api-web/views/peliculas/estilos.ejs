@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estilos</title>
+
+    <style>
+        /* .css */
+        /* selector { p1:valor; p1:valor; }*/
+        /* selector -> Etiqueta */
+        h1 {
+            color: red;
+            background-color: yellow;
+        }
+
+        /* selector -> Etiqueta */
+        p, h2, div {
+            color: green;
+            background-color: orange;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* selector -> ID */
+        #adios {
+            color: pink;
+            background-color: purple;
+        }
+
+        /* selector -> Clase */
+        .verde {
+            color: brown;
+            background-color: blue;
+        }
+
+        /* importancia selector  ID > CLASE.ETIQUETA >  CLASE > ETIQUETA
+
+          */
+        /*  CLASE > CLASE > CLASE (la ultima es la mas importante)   */
+
+        p {
+            color: orange;
+            background-color: green;
+        }
+
+        p {
+            color: blue;
+            background-color: orange;
+        }
+
+        .azul {
+            color: deepskyblue;
+        }
+
+        .morado {
+            color: purple;
+        }
+
+        .verde {
+            color: greenyellow;
+        }
+
+        p.verde {
+            color: orange;
+        }
+
+        p.verde.azul {
+            color: black;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<h1>Hola</h1>
+
+<h1 id="adios" class="verde" style="color:white;background-color:black;">Adios</h1>
+
+<h1 class="verde">Bienvenidos</h1>
+
+<p>Barcelona</p>
+<div>Liga</div>
+<h2>Emelec</h2>
+
+
+<p class="morado azul">Lorem Ipsum</p>
+<div class="verde">VERDE UNO</div>
+<p class="verde">VERDE DOS</p>
+
+<p class="verde azul">VERDE DOS</p>
+
+
+<style>
+    p {
+        color: red;
+        background-color: blue;
+    }
+
+</style>
+
+</body>
+</html>
