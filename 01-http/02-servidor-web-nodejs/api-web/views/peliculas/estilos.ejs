@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Estilos</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <style>
         /* .css */
         /* selector { p1:valor; p1:valor; }*/
@@ -76,31 +78,141 @@
 
 </head>
 <body>
-<h1>Hola</h1>
+<div class="container">
 
-<h1 id="adios" class="verde" style="color:white;background-color:black;">Adios</h1>
+    <div class="row">
+        <!-- EMMET -->
+        <!-- .div -->
+        <!-- .col-sm-5*3 -->
 
-<h1 class="verde">Bienvenidos</h1>
+        <!-- Las medidas van a variar con sm:small, md:medium y lg:large -->
 
-<p>Barcelona</p>
-<div>Liga</div>
-<h2>Emelec</h2>
+        <div class="col-sm-2">
+            <h1>LOGO</h1>
+        </div>
+
+        <div class="col-sm-5">
+            <h1>MENU</h1>
+        </div>
+
+        <div class="col-sm-5">
+            <h1>LOGIN</h1>
+        </div>
 
 
-<p class="morado azul">Lorem Ipsum</p>
-<div class="verde">VERDE UNO</div>
-<p class="verde">VERDE DOS</p>
+    <!-- col - sm/md/lg -# 1 -12 -->
+        <!--<div class ="col-sm-12">
+           <h1>COLUMNA 12</h1>
+       </div>
 
-<p class="verde azul">VERDE DOS</p>
+       <div class ="col-sm-6">
+           <h1>COLUMNA 6</h1>
+       </div>
+
+       <div class ="col-sm-6">
+           <h1>COLUMNA 6</h1>
+       </div>-->
+
+   </div>
+
+    <div class="row">
 
 
-<style>
-    p {
-        color: red;
-        background-color: blue;
-    }
+        <div class="col-sm-3">
+            <h1>Genero de Peliculas</h1>
+            <table>
+                <tr>
+                    <td>i</td>
+                    <td>Accion</td>
+                    <td>824</td>
+                </tr>
+                <tr>
+                    <td>i</td>
+                    <td>Animacion</td>
+                    <td>356</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm-9">
+            <h1>Peliculas Online</h1>
+            <p>Pelisplus.co es un sitio ideal para ver películas y series online. Nuestro sistema se preocupa por tener lo último del cine en calidad full HD.
+                Para ver una película o serie de televisión puedes usar el buscador en la parte superior o seguir uno de los enlaces de genero o año de estreno en la parte izquierda del sitio, luego el enlace te llevará al reproductor donde solo tienes que dar click en el boton de play. Te invitamos a compartir este genial sitio con tus amigos y familiares.
+            </p>
 
-</style>
+            <!--.row>.col-sm-6*2 Esto es para que la pantalla se quede Responsible-->
+            <div class="row">
+                <div class="col-sm-6"><h1>Columna1</h1></div>
+                <div class="col-sm-6"><h1>Columna2</h1></div>
+            </div>
+        </div>
+    </div>
+    </div>
 
-</body>
-</html>
+
+   <div class = "separator"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <h1>Hola</h1>
+
+   <h1 id="adios" class="verde" style="color:white;background-color:black;">Adios</h1>
+
+   <h1 class="verde">Bienvenidos</h1>
+
+   <p>Barcelona</p>
+   <div>Liga</div>
+   <h2>Emelec</h2>
+
+
+   <p class="morado azul">Lorem Ipsum</p>
+
+   <div class="verde">VERDE UNO</div>
+   <p class="verde">VERDE DOS</p>
+
+   <p class="verde azul">VERDE DOS</p>
+
+
+   <style>
+       p {
+           color: red;
+           background-color: blue;
+       }
+
+       .separator{
+           margin-top: 200px;
+           margin-bottom: 200px;
+       }
+
+       table {
+           width: 100%;
+
+       }
+       tr{
+           border-bottom-style: solid;
+           border-bottom-width: 2px;
+           border-bottom-color: brown;
+           border-bottom: solid  2px brown;
+       }
+
+   </style>
+
+   </body>
+   </html>
+
+
+
