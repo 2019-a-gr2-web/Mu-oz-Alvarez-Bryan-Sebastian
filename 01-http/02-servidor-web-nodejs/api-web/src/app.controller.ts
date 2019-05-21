@@ -26,6 +26,9 @@ import * as Joi from '@hapi/joi';
 // @Controller(segmentoInicial)
 @Controller('/api')
 export class AppController {
+
+    arreglosUsuarios =[];
+
     constructor(private readonly appService: AppService) {
     }
 
@@ -198,6 +201,14 @@ export class AppController {
             'peliculas/estilos');
     }
 
+
+    @Get('paginaDeber')
+    paginaDeber(
+        @Response() res
+    ) {
+        return res.render(
+            'peliculas/paginaDeber');
+    }
 
     // js -> ts
 
