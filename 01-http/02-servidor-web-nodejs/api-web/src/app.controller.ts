@@ -210,6 +210,15 @@ export class AppController {
             'peliculas/paginaDeber');
     }
 
+
+    @Get('paginaDb')
+    paginaDb(
+        @Response() res
+    ) {
+        return res.render(
+            'peliculas/paginaDb');
+    }
+
     // js -> ts
 
 
