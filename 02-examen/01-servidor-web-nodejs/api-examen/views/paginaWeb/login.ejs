@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Login</title>
+    <meta charset ="UTF-8">
+    <link rel="icon" href="/imagenes/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        html,body{
+            font-family:"Century Gothic","Muli", sans-serif !important;
+        }
+        body{
+            padding-top: 40px;
+        }
+        .btn-login{
+            border-color: black; border-width: 1px; border-radius: 50px;
+            color:black; padding-left: 28px; padding-right: 28px;
+            margin-top: 15px;font-size: 1.8em;padding-left: 25px;
+        }
+        .btn-login:hover{
+            background-color: #2d457a;color:white;
+        }
+        .form-control{
+            font-size: 1.8em;
+        }
+        .img{
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="container-fluid" style="margin-top: 150px;">
+        <div class="mt-5 d-flex justify-content-center">
+        <form action="/examen/login" method="POST">
+            <div class="img" >
+                <img src="/imagenes/epn.png" width="200px">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="nombre" style="font-size: 1.8em ">Ingrese el nombre del Administrador</label>
+                <input class="form-control" id="nombre"  name="nombre" type="text">
+                <button class="btn-login" type="submit">Login</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Crear Autos</title>
+    <meta charset ="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link id="favicon" rel="icon" href="/images/examen-favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        html,body{
+            font-family:"Century Gothic","Muli", sans-serif !important;
+        }
+        body{
+            padding-top: 100px;
+        }
+        .btn, .btn-salir {
+            border-color: black; border-width: 1px; border-radius: 50px;
+            color:black; padding-left: 28px; padding-right: 28px;
+        }
+        .btn, .btn-salir:hover{
+            background-color: #7a1111;color:white;
+        }
+        .btn-app{
+            border-color: black; border-width: 1px; border-radius: 50px;
+            background-color: #7a1111;color:white; padding-left: 28px; padding-right: 28px;
+            width: 109px;
+        }
+        .btn-app:hover{
+            background-color: #993906;color:white;
+        }
+        table,tr,td, th{
+            border: solid black 1px;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+<!--Barra de navegación -->
+<section>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top " style="padding-bottom: 10px;">
+        <a class="navbar-left">
+            <img src="/images/logo_transparent.png" height="70" width="70">
+            <a class="navbar-brand"> Examen I Bimestre - APP WEB</a>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item active" style="padding-right: 60px;">
+                    <a>
+                        <span>
+                            Bienvenido/a: <%= nombre%>
+                        </span>
+
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto" id="navbarSupportedContent">
+                <li id="btn-salir" class="nav-item active">
+                    <form action="/examen/eliminarCookie" method="POST">
+                        <button  class="btn-salir">Salir
+                        </button>
+                    </form>
+
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+</section>
+
+
+<section>
+    <h1 style="text-align: center">Formulario de Creación de Auto</h1>
+    <div class="container">
+
+        <form action="/examen/crearAuto" method="post">
+
+            <form action="/examen/crearAuto"method="post">
+                <div class="row">
+                    <div class="col-sm-12 md-auto">
+                        <label for="numChasis">Chasis</label>
+                        <input id="numChasis" name="chasis" type="number" style="width: 400px">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 md-auto">
+                        <label for="marca">Marca</label>
+                        <input id="marca" name="nombreMarca" type="text" style="width: 400px">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 md-auto">
+                        <label for="colorUno">Color Uno</label>
+                        <input id="colorUno" name="colorUno" type="text" style="width: 400px">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 md-auto">
+                        <label for="colorDos">Color Dos</label>
+                        <input id="colorDos" name="colorDos" type="text" style="width: 400px">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 md-auto">
+                        <label for="modelo">Modelo</label>
+                        <input id="modelo" name="nombreModelo" type="text" style="width: 400px">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 md-auto">
+                        <label for="anio">Años</label>
+                        <input id="anio" name="anio" type="number" min="0">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 md-auto">
+                        <label for="conductorID">Id Conductor</label>
+                        <input id="conductorD" name="conductorId" type="number" min="0" value="<%=id%>">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 md-auto">
+                        <a href="/examen/autos">
+                            <button class="btn-app" type="button" style="width: 180px">Cancelar</button>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 md-auto">
+                        <button class="btn-app" type="submit" style="width: 180px">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </form>
+
+    </div>
+
+
+</section>
+
+</body>
+
+</html>
