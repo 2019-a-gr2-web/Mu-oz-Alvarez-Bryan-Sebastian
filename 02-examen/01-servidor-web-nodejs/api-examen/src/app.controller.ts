@@ -28,7 +28,7 @@ export class AppController {
   }
 
   //Lleva a la página de la tabla de los conductores
-  @Get('/conductores')
+  @Get('/estudiantes')
   getConductores(@Response() res, @Request() req){
     const cookieUsuarioSegura = req.signedCookies;
     const arregloEstudiantes= this.appService.bddEstudiantes;
@@ -40,7 +40,7 @@ export class AppController {
 
 
 //Lleva a la página que permite agregar un nuevo conductor
-  @Get('/crear-conductores')
+  @Get('/crear-estudiante')
   getCrearConductores(@Response() res, @Request() req){
     const cookieUsuarioSegura = req.signedCookies;
     return res.render('estudiantes/crear-estudiante', {
@@ -68,7 +68,7 @@ export class AppController {
 
 
   //Crea un nuevo conductor para ser añadido a la lista
-  @Post('/crearConductor')
+  @Post('/crearEstudiante')
   crearConductorPost(
       @Body() conductor:Estudiantes,
       @Response() res
@@ -79,7 +79,7 @@ export class AppController {
     conductor.graduado = Boolean(conductor.graduado);
     console.log(conductor);
     this.appService.crearConductor(conductor);
-    res.redirect('/examen/conductores');
+    res.redirect('/examen/estudiantes');
   }
 
 
@@ -102,11 +102,11 @@ export class AppController {
   }
 
   //Busca al conductor de acuerdo al paramtero de entrada
-  @Post('/buscarConductores')
+  @Post('/buscarEstudiantes')
   buscarConductor(@Response() res,
-                  @Body('busquedaConductor') busquedaConductor: string, @Request() request) {
+                  @Body('busquedaEstudiante') busquedaEstudiante: string, @Request() request) {
     const cookieSeg = request.signedCookies;
-    var arregloEstudiantes=this.appService.buscarPorNombre(busquedaConductor);
+    var arregloEstudiantes=this.appService.buscarPorNombre(busquedaEstudiante);
     console.log('imprimiendo arreglo conductores:',arregloEstudiantes);
     if(arregloEstudiantes!=null){
       res.render('estudiantes/estudiantes', {arregloEstudiantes:arregloEstudiantes,nombre:cookieSeg.nombreUsuario})
@@ -130,7 +130,7 @@ export class AppController {
 
     }
     else{
-      return response.render('login');
+      return response.render('paginaWeb/login');
     }
 
   }
@@ -145,7 +145,7 @@ export class AppController {
 
     }
     else{
-      return response.render('login');
+      return response.render('paginaWeb/login');
     }
 
 
@@ -177,13 +177,13 @@ export class AppController {
       @Request() request
   ){
     const cookieSeg = request.signedCookies;
-    auto.chasis=Number(auto.chasis);
-    auto.nombreMarca=String(auto.nombreMarca);
-    auto.colorUno=String(auto.colorUno);
-    auto.colorDos=String(auto.colorDos);
-    auto.nombreModelo=String(auto.nombreModelo);
-    auto.anio =Number(auto.anio);
-    auto.conductorId = Number(auto.conductorId);
+    auto.codigo=Number(auto.codigo);
+    auto.nombreMateria=String(auto.nombreMateria);
+    auto.descripcion=String(auto.descripcion);
+    auto.activo=Boolean(auto.activo);
+    auto.fechaCreacion=new Date(auto.fechaCreacion);
+    auto.numeroHorasPorSemana =Number(auto.numeroHorasPorSemana);
+    auto.estudianteId = Number(auto.estudianteId);
     console.log(auto);
     this.appService.crearAuto(auto);
     if (cookieSeg.nombreUsuario) {
@@ -192,7 +192,7 @@ export class AppController {
 
     }
     else{
-      return res.render('login');
+      return res.render('paginaWeb/login');
     }
 
 
@@ -247,7 +247,7 @@ export class AppController {
 
       }
       else{
-        return res.render('login');
+        return res.render('paginaWeb/login');
       }
 
     }

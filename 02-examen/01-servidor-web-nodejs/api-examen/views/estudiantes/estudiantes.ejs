@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Autos</title>
+    <title>Estudiantes</title>
     <meta charset ="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,14 +93,14 @@
 
 <section>
     <div class="container" style="flex-wrap: wrap">
-        <form action="/examen/buscarConductores" method="POST"> <!--Cambiar-->
+        <form action="/examen/buscarEstudiantes" method="POST"> <!--Cambiar-->
             <br>
             <br>
             <div class="row">
                 <div class="col-md-6 md-auto" style="position: relative">
 
-                    <label for="busquedaConductor" style="font-size: 1.8em;">Busqueda</label> <!--Cambiar-->
-                    <input class="form-control" id="busquedaConductor"  name="busquedaConductor" type="text" style="width: 400px"> <!--Cambiar-->
+                    <label for="busquedaEstudiante" style="font-size: 1.8em;">Busqueda</label> <!--Cambiar-->
+                    <input class="form-control" id="busquedaEstudiante"  name="busquedaEstudiante" type="text" style="width: 400px"> <!--Cambiar-->
 
                 </div>
 
@@ -120,7 +120,7 @@
 
             </div>
             <div class="col-sm-6 md-auto"  >
-                <a href="/examen/crear-conductores"> <!--Cambiar-->
+                <a href="/examen/crear-estudiante"> <!--Cambiar-->
 
                     <button type="submit" class="btn-app" style="position:relative;top:50%; left:50%; ">
 
@@ -162,7 +162,7 @@
                         <td> <%= estudiantes.graduado %> </td>
                         <td>
                             <a href="/examen/materias/<%=estudiantes.id%>">
-                            <button class="btn-app" style="width: 180px">Gestionar Hijos</button>
+                                <button class="btn-app" style="width: 180px">Gestionar Hijos</button>
                             </a>
                             <br>
                             <form action="/examen/eliminarConductor" method="post">
@@ -179,3 +179,4 @@
 
 
 </body>
+</html>
