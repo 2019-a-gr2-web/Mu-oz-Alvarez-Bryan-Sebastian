@@ -204,17 +204,22 @@ export class AppController {
 
     const cookieSeg = request.signedCookies;
     this.appService.eliminarPorId(Number(idAuto));
+
     if (cookieSeg.nombreUsuario) {
 
       res.redirect('/examen/materias/'+idConductor);
 
     }
+
     else{
       return res.render('paginaWeb/login');
     }
 
 
   }
+
+
+
 
 
 

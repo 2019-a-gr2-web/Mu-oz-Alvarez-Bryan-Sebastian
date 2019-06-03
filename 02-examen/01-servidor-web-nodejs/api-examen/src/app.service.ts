@@ -78,6 +78,7 @@ export class AppService {
         return nuevoAuto
     }
 
+
     buscarPorId(id: number) {
         console.log('id:', id);
         const resultado=this.bddMaterias.filter(
@@ -91,6 +92,7 @@ export class AppService {
 
     }
 
+
     buscarAutoMarca(marca: string, id:number) {
         console.log('nombre:', marca);
         const resultado=this.bddMaterias.filter(
@@ -103,6 +105,7 @@ export class AppService {
 
 
     }
+
 
     eliminarPorId(id:number):Materias[]{
         console.log('id:', id);
