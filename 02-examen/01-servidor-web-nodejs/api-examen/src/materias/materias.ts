@@ -1,10 +1,10 @@
 export interface Materias{
     id?:number;
-    chasis:number;
-    nombreMarca:string;
-    colorUno:string;
-    colorDos:string;
-    nombreModelo:string;
-    anio:number;
-    conductorId:number
+    codigo:number;
+    nombreMateria:string;
+    descripcion:string;
+    activo:boolean;
+    fechaCreacion:Date;
+    numeroHorasPorSemana:number;
+    estudianteId:number
 }
