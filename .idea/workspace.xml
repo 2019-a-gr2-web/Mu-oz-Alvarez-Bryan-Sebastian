@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="063517b7-6c5c-4db6-ae64-05c2f1d58a20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/estudiantes/estudiantes.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/materias/materias.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/estudiantes/crear-estudiante.ejs" afterDir="false" />
@@ -11,7 +10,6 @@
       <change afterPath="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/materias/materias.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/paginaWeb/inicio.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/paginaWeb/login.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,21 +26,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/materias/materias.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="101" column="91" lean-forward="true" selection-start-line="101" selection-start-column="91" selection-end-line="101" selection-end-column="91" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#form#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1717">
+              <caret line="101" column="91" selection-start-line="101" selection-start-column="91" selection-end-line="101" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/app.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="114" column="32" lean-forward="true" selection-start-line="114" selection-start-column="32" selection-end-line="114" selection-end-column="32" />
+            <state relative-caret-position="272">
+              <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -50,14 +44,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/app.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="853">
-              <caret line="220" column="20" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="20" />
+            <state relative-caret-position="17">
+              <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
               <folding>
                 <element signature="e#0#124#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/estudiantes/crear-estudiante.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -111,18 +114,18 @@
         <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/paginaWeb/login.ejs" />
         <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/paginaWeb/inicio.ejs" />
         <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/estudiantes/estudiantes.ts" />
-        <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/estudiantes/crear-estudiante.ejs" />
         <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/materias/crear-materia.ejs" />
         <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/materias/materias.ts" />
         <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/main.ts" />
         <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/estudiantes/estudiantes.ejs" />
-        <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/app.service.ts" />
         <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/materias/materias.ejs" />
         <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/app.controller.ts" />
+        <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/estudiantes/crear-estudiante.ejs" />
+        <option value="$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/app.service.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -148,6 +151,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,7 +259,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,12 +318,13 @@
       <workItem from="1558540545733" duration="11876000" />
       <workItem from="1559144553004" duration="219000" />
       <workItem from="1559237807679" duration="18838000" />
-      <workItem from="1559435640336" duration="16449000" />
+      <workItem from="1559435640336" duration="16459000" />
+      <workItem from="1559536988566" duration="244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128598000" />
+    <option name="totallyTimeSpent" value="128852000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,10 +336,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16220239" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16220239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -348,8 +351,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32890365" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3255814" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.78125" visible="true" weight="0.4140753" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.21875" side_tool="true" weight="0.31260228" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.78050596" visible="true" weight="0.4140753" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.21949404" side_tool="true" weight="0.4140753" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -584,17 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/estudiantes/crear-estudiante.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1440">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="e#1829#1835#0#HTML" expanded="true" />
-            <element signature="e#1848#1854#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/estudiantes/estudiantes.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -666,31 +658,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/materias/materias.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="101" column="91" lean-forward="true" selection-start-line="101" selection-start-column="91" selection-end-line="101" selection-end-column="91" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#form#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/app.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="114" column="32" lean-forward="true" selection-start-line="114" selection-start-column="32" selection-end-line="114" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1717">
+          <caret line="101" column="91" selection-start-line="101" selection-start-column="91" selection-end-line="101" selection-end-column="91" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/app.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="853">
-          <caret line="220" column="20" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="20" />
+        <state relative-caret-position="17">
+          <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
           <folding>
             <element signature="e#0#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/views/estudiantes/crear-estudiante.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-examen/01-servidor-web-nodejs/api-examen/src/app.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
