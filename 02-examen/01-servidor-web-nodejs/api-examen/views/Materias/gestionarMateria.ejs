@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+    table,
+    tr,
+    td,
+    th {
+        border: solid black 1px;
+    }
+</style>
+
+<head>
+    <title>Gestion Materias</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/Imagenes/dropbox.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!--Inicio-Banda-Presentacion-->
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#3e67ad">
+    <img src="/imagenes/epn-logo.png" width="80">
+    <a class="navbar-brand" href="/">Escuela Politécnica Nacional</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item active" style="padding-right: 60px;">
+                <a>
+                        <span style="color: #ffffff; font-size: 10pt">
+                           Bienvenido/a: <%= nombre%>
+                        </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto" id="navbarSupportedContent">
+            <li id="btn-salir" class="nav-item active">
+                <form action="/examen/borrarCookie" method="POST">
+                    <button type="submit" class="btn btn-primary" style="background-color: #ffffff; color:#2d457a;">Salir</button>
+                    </button>
+                </form>
+
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--Final-Banda-Presentacion-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form action="/examen/Estudiante/buscarMateria/" method="POST">
+
+                <div class="mt-5 d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="form-group">
+                                <label for="busquedaMaterias">Búsqueda Materias</label>
+                                <input class="form-control" id="busquedaMaterias" name="busquedaMaterias" type="text" style="width: 400px">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex justify-content-center">
+
+                                <button type="submit" class=" mt-4 btn">Buscar</button>
+
+                            </div>
+                            <div class="mt-3 d-flex justify-content-center">
+                                <a href="/examen/Estudiante/crearMateria/<%=id%>">
+
+                                    <button type="button" class="btn">Crear</button>
+
+                                </a>
+                            </div>
+                            <div class="mt-3 d-flex justify-content-center">
+                                <a href="/examen/gestionarEstudiante"><button type="button" class="btn">Volver</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+    <div class="mt-5 d-flex justify-content-center">
+        <div class="col-md-12">
+            <table class="ml-5">
+                <tr>
+                    <th>Numero Materia</th>
+                    <th>Codigo</th>
+                    <th>Descripcion</th>
+                    <th>Horas x Semana</th>
+                    <th>Fecha de Creacion</th>
+                    <th>Activo</th>
+                    <th>Id Estudiante</th>
+                    <th>Opciones</th>
+                </tr>
+                <% arregloMaterias.forEach((materias)=>{ %>
+                    <tr>
+                        <td>
+                            <%= materias.codigo %>
+                        </td>
+                        <td>
+                            <%= materias.nombre %>
+                        </td>
+                        <td>
+                            <%= materias.descripcion %>
+                        </td>
+                        <td>
+                            <%= materias.numeroHorasPorSemana %>
+                        </td>
+                        <td>
+                            <%= materias.fecha_Creacion %>
+                        </td>
+                        <td>
+                            <%= materias.activo %>
+                        </td>
+                        <td>
+                            <%= materias.estudianteID %>
+                        </td>
+                        <td>
+                            <form action="/examen/Estudiante/eliminarMaterias" method="post">
+                                <input id="idMateria" name="idMateria" type="number" value="<%= materias.id %>" hidden>
+                                <input id="EstudianteIdMateria" name="EstudianteIdMateria" type="number" value="<%= materias.estudianteID %>" hidden>
+                                <button class="btn">Borrar</button>
+                            </form>
+                        </td>
+                    </tr>
+                <% }) %>
+            </table>
+        </div>
+    </div>
+</div>
+<style>
+    .btn {
+        background-color: #ffffff;
+        color: #2d457a;
+        border: 1px solid #2d457a;
+    }
+
+    .btn:hover {
+        background-color: #2d457a;
+        color: #ffffff;
+    }
+
+    a {
+        border: 0px;
+        padding: 0px;
+    }
+</style>
+
+</body>
+
+</html>
