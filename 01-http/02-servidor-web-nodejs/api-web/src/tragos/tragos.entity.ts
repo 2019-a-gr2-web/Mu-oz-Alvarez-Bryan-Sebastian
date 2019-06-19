@@ -1,4 +1,5 @@
-import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, ManyToOne, PrimaryGeneratedColumn} from "typeorm";
+import {DistribuidorEntity} from "../distribuidor/distribuidor.entity";
 
 @Entity('bd_trago') // Nombre tabla
 export class TragosEntity {
@@ -39,5 +40,10 @@ export class TragosEntity {
     name: 'precio',
     })
     precio: number;
+
+
+    @ManyToOne(type => DistribuidorEntity, distribuidor => distribuidor.tragos)
+    distribuidorId: DistribuidorEntity;
+
 
 }
