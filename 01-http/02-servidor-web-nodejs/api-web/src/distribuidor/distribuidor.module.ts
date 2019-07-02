@@ -1,27 +1,6 @@
-import {Module} from "@nestjs/common";
-import { TypeOrmModule } from '@nestjs/typeorm';
-import {DistribuidorEntity} from "./distribuidor.entity";
-
-
+import { Module } from '@nestjs/common';
 @Module({
-    imports:[
-        TypeOrmModule.forFeature(
-            [
-                DistribuidorEntity
-            ],
-            'default'
-        ),
-    ],  // Modulos
-    controllers:[
 
-    ], // Controladores
-    providers:[
-
-    ], // Servicios
-    exports:[
-
-    ] // Exportar Servicios
 })
 export class DistribuidorModule {
-
 }

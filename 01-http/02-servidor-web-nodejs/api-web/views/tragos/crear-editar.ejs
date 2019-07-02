@@ -1,76 +1,101 @@
-<h1>Formulario de Creación</h1>
+<%- include('../componentes/menu/menu')%>
 
-<p>Crea un nuevo trago.</p>
+<% const existeMensaje = mensaje%>
+<% if(existeMensaje){%>
+<p>Error en formulario <%=mensaje%></p>
+<% }%>
 
-<form
-        action="/api/traguito/crear"
-        method="post">
 
+
+<!-- <% const existeTrago = arregloTragos%> -->
+<% if(existeTrago){%>
+<h1>Formulario de edicion</h1>
+<p>editar un trago.</p>
+<form action="/api/traguito/editar" method="post">
     <label for="nombreId">Nombre</label>
-    <input id="nombreId" name="nombre" type ="text"> <!--nunca olvidarse de que en un formulario debe ir el nombre-->
-
-    <a href="/api/traguito/lista">
-
-        <button type=""button>Cancelar</button>
-
-    </a>
-
+    <input id="noombreId" name="nombre" type="text" value="<%=existeTrago.nombre%>">
     <br>
-    <br>
-
-    <label for="tipoId">Tipo trago</label>
+    <label for="tipoId">tipo de trago</label>
     <select name="tipo" id="tipoId">
         <option value="Ron">Roncito</option>
         <option value="Vodka">Vodkita</option>
         <option value="Tequila">Tequilita</option>
-        <option value="Whiskey">Whiskycito</option>
+        <option value="Whiskey" selected>Whiskycito</option>
         <option value="Puntas">Puntitas</option>
         <option value="Cerveza">Chelitas</option>
-
     </select>
-
+    <br>
+    <label for="gradosId">grados de alcohol</label>
+    <input id="gradosId"
+           name="gradosAlcohol"
+           type="number"
+           min="0"
+           max="100"
+           step="0.1"
+           value="<%=existeTrago.gradosAlcohol%>">
+    <br>
+    <label for="fechaCaducidadId">fecha de caducidad</label>
+    <input id="fechaCaducidadId" name="fechaCaducidad" type="date" value="<%=existeTrago.fechaCaducidad%>">
+    <br>
+    <label for="precioId">precio</label>
+    <input id="precioId"
+           name="precio"
+           type="number"
+           min="0"
+           step="0.01"
+           value="<%=existeTrago.precio%>">
     <br>
     <br>
-
-    <label for="gradosId">Grados de alcohol</label>
-    <input id="gradosId" name="gradosAlcohol" type ="number" min="0" max="100" step="0.01">
-
+    <input id="id" name="id" type="hidden" value="<%=existeTrago.id%>">
     <br>
-    <br>
-
-    <label for="fechaCaducidadId">Fecha Caducidad</label>
-    <input id="fechaCaducidadId" name="fechaCaducidad" type ="date">
-
-    <br>
-    <br>
-
-    <label for="precioId">Precio</label>
-    <input id="precioId" name="precio" type ="number" min="0" step="0.01">
-
-    <br>
-    <br>
-
-    <!--<button type="reset">Reset</button>
-    <button type="submit">Submit</button>-->
-
-
-    <button>Enviar Informacion</button>
-
-</form>
-
-<!--Dar la funcion de eliminar un traguito-->
-<form
-
-    action="/api/traguito/lista"
-    method="post">
-
-    <label for="nombreId">Nombre</label>
-    <input id="nombreId" name="nombre" type ="text" value="" hidden> <!--nunca olvidarse de que en un formulario debe ir el nombre-->
-
+    <!--    <button type="reset">reset</button>-->
+    <!--    <button type="submit">submit</button>-->
     <a href="/api/traguito/lista">
-
-        <button type=""button>Cancelar</button>
-
+        <button type="button">cancelar</button>
     </a>
-
+    <button>editar informacion</button>
 </form>
+<%}else{%>
+    <h1>Formulario de creacion</h1>
+    <p>crea un nuevo trago.</p>
+    <form action="/api/traguito/crear" method="post">
+        <label for="nombreId">Nombre</label>
+        <input id="noombreId" name="nombre" type="text">
+        <br>
+        <label for="tipoId">tipo de trago</label>
+        <select name="tipo" id="tipoId">
+            <option value="Ron">Roncito</option>
+            <option value="Vodka">Vodkita</option>
+            <option value="Tequila">Tequilita</option>
+            <option value="Whiskey" selected>Whiskycito</option>
+            <option value="Puntas">Puntitas</option>
+            <option value="Cerveza">Chelitas</option>
+        </select>
+        <br>
+        <label for="gradosId">grados de alcohol</label>
+        <input id="gradosId"
+               name="gradosAlcohol"
+               type="number"
+               min="0"
+               max="100"
+               step="0.1">
+        <br>
+        <label for="fechaCaducidadId">fecha de caducidad</label>
+        <input id="fechaCaducidadId" name="fechaCaducidad" type="date">
+        <br>
+        <label for="precioId">precio</label>
+        <input id="precioId"
+               name="precio"
+               type="number"
+               min="0"
+               step="0.01">
+        <br>
+        <!--    <button type="reset">reset</button>-->
+        <!--    <button type="submit">submit</button>-->
+        <a href="/api/traguito/lista">
+            <button type="button">cancelar</button>
+        </a>
+        <button>enviar informacion</button>
+    </form>
+<%}%>
+<%- include('../componentes/footer/footer')%>

@@ -1,9 +1,8 @@
-import {IsDate, IsEmpty, IsNotEmpty, IsNumber, IsString} from "class-validator";
-
-export class TragosCreateDto{
-
+import {DistribuidorEntity} from "../../distribuidor/distribuidor.entity";
+import {IsEmpty, IsNotEmpty, IsString, IsNumber, IsDate, IsOptional} from "class-validator";
+export class TragosCreateDto {
     @IsEmpty()
-    id:number;
+    id: number;
 
     @IsNotEmpty()
     @IsString()
@@ -18,11 +17,14 @@ export class TragosCreateDto{
     gradosAlcohol: number;
 
     @IsDate()
+    @IsOptional()
     fechaCaducidad: Date;
 
     @IsNumber()
+    @IsOptional()
     precio: number;
 
     @IsNumber()
-    distribuidorId: number;
+    @IsOptional()
+    distribuidorId: DistribuidorEntity;
 }
