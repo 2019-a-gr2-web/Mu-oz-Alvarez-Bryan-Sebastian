@@ -1,0 +1,17 @@
+<%const exiteNombre = typeof nombre !== "undefined";%>
+
+<ul>
+    <li>
+        Inicio
+    </li>
+    <li>
+        Login
+    </li>
+</ul>
+<p>Bienvenido:
+    <% if(exiteNombre){%>
+    <%=nombre%>
+    <%}else{%>
+        Usuario
+    <%}%>
+</p>

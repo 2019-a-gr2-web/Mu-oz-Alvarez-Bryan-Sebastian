@@ -1,9 +1,8 @@
 import {Module} from "@nestjs/common";
 import {TragosController} from "./tragos.controller";
 import {TragosService} from "./tragos.service";
-import { TypeOrmModule } from '@nestjs/typeorm';
 import {TragosEntity} from "./tragos.entity";
-
+import { TypeOrmModule } from '@nestjs/typeorm';
 @Module({
     imports:[
         TypeOrmModule.forFeature(
@@ -12,17 +11,17 @@ import {TragosEntity} from "./tragos.entity";
             ],
             'default'
         ),
-    ],  // Modulos
+    ],//modulos
     controllers:[
         TragosController
-    ], // Controladores
+    ],//controladores
     providers:[
         TragosService
-    ], // Servicios
+    ],//servicios
     exports:[
         TragosService
-    ] // Exportar Servicios
+    ]//Exportar servicios
 })
-export class TragosModule {
+export class TragosModule{
 
 }

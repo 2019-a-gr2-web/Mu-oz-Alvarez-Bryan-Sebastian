@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebSockets</title>
+</head>
+<body>
+    <script src="/websockets/socket.io.js"></script>
+    <script>
+
+        const url = 'http://localhost:3001/websockets';
+        const socket = io(url);
+
+        socket.on('connect', //nombre del evento
+            ()=> {
+                console.log('Estamos conectados!!');
+            }
+        );
+
+        socket.on('saludaron', //nombre del evento
+            (data)=> {
+                console.log('Nos saludaron', data);
+            }
+        );
+
+        function peticionHolaMundo() {
+            const nombreMetodo = 'holaMundo';
+            const datos = {
+                nombre:'sebastian'
+            }
+            socket.emit(
+                nombreMetodo,
+                datos,
+                (respuesta)=>{
+                    console.log(respuesta);
+                }
+            );
+
+        }
+
+    </script>
+</body>
+</html>
