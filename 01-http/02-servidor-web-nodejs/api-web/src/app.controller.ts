@@ -1,12 +1,69 @@
-import { Controller, Get, Post, HttpCode, Put,Delete, Headers, Query, Param, Body, Request,Response,Session} from '@nestjs/common';
+import {
+    Controller,
+    Get,
+    Post,
+    HttpCode,
+    Put,
+    Delete,
+    Headers,
+    Query,
+    Param,
+    Body,
+    Request,
+    Response,
+    Session,
+    Render, UseInterceptors, UploadedFile, Res
+} from '@nestjs/common';
 import { AppService } from './app.service';
 
 import * as Joi from '@hapi/joi'
+import {FileInterceptor} from "@nestjs/platform-express";
 @Controller('/api')
 export class AppController {
-    arregloUsuario =[];
+    arregloUsuario = [];
 
-    constructor(private readonly appService: AppService) {}
+    constructor(private readonly appService: AppService) {
+    }
+
+    @Get('subirArchivo/:idTrago')
+    @Render('archivo')
+    subirArchivo(
+        @Param('idTrago') idTrago
+    ) {
+        return {
+            idTrago: idTrago
+        };
+    }
+
+    @Post('subirArchivo/:idTrago')
+    @UseInterceptors(
+        FileInterceptor(
+            'imagen',
+            {
+                dest: __dirname + '/../archivos'
+            }
+        )
+    )
+
+    subirArchivoPost(
+        @Param('idTrago') idTrago,
+        @UploadedFile() archivo) {
+        console.log(archivo);
+        return {mensaje: 'ok'}
+
+    }
+
+    @Get('descargarArchivo/:idTrago')
+    descargarArchivo(
+        @Res() res,
+        @Param('idTrago') idTrago
+    ){
+        const originalname = 'descarga (1).jfif';
+        const path = 'C:\\Users\\Sebastian\\Documents\\GitHub\\Mu-oz-Alvarez-Bryan-Sebastian\\01-http\\02-servidor-web-nodejs\\api-web\\archivos\\38976622eed3df75480a4c7b77e73814'
+        res.download(path, originalname);
+    }
+
+
     @Get('session')
     session(
         @Query('nombre') nombre,
