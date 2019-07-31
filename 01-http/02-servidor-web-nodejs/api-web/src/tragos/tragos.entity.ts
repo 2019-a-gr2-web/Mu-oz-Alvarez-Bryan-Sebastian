@@ -45,7 +45,8 @@ export class TragosEntity{
     precio: number;
 
     @ManyToOne(type => DistribuidorEntity, distribuidor => distribuidor.tragos)
-    distribuidorId: DistribuidorEntity;
+    distribuidorId
+        : DistribuidorEntity;
 
     @OneToMany( type => FiestaEntity, fiesta => fiesta)
     fiestas: FiestaEntity[];

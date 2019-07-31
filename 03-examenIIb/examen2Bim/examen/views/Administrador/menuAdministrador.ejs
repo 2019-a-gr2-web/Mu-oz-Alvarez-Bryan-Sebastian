@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+
+        html,body {
+            background-image: url('https://www.multiplicalia.com/wp-content/uploads/2015/02/tienda-online.jpg');
+            background-repeat: no-repeat;
+            height: 50%;
+            font-family: 'Numans', sans-serif;
+            color: white;
+
+        }
+
+        .btn{
+            color: white;
+            background-color: crimson;
+
+        }
+        tr{
+            font-family: 'Numans', sans-serif;
+            color: black;
+        }
+
+
+
+        .espacio{
+            height: 100px;
+        }
+        .cabecera{
+            padding-top:20px;
+        }
+    </style>
+</head>
+<body>
+<div class="col-sm-12" align="center">
+    <span class="text-sm-right">Bienvenido/a: <%=usuario%></span>
+</div>
+<div class="container">
+    <div class="col-sm-12">
+        <div class="cabecera row text-right">
+            <div class="col-sm-6">
+
+            </div>
+            <div class="col-sm-12" align="center">
+                <a href="http://localhost:3000/api/login">
+                    <button  type="button" class="btn btn-sm btn-primary">Salir</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="espacio"></div>
+    <!--<div class="col-sm-12">
+        <form action="/api/tienda/buscar" class="form-horizontal" method="post">
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="busquedaId" placeholder="Busqueda" name="busqueda">
+                </div>
+                <div class="col-sm-2 text-right"><button type="submit" class="btn btn-sm btn-primary">buscar</button></div>
+            </div>
+
+        </form>
+    </div>-->
+
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <table class="table table-md table-hover table-bordered">
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Direccion</th>
+                    <th>FechaApertura</th>
+
+                    <th>Matriz</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <% listaTiendas.forEach((tienda)=>{ %>
+                    <tr>
+                        <td><%= tienda.nombre%></td>
+                        <td><%= tienda.direccion%></td>
+                        <td><%= tienda.fechaApertura%></td>
+
+                        <!--<td><%= tienda.Matriz%></td>-->
+                        <td><%if(tienda.Matriz){%>
+                                <input type="checkbox" disabled>
+                            <%}else{%>
+                                <input type="checkbox" checked disabled>
+                            <%}%>
+                        </td>
+                        <td>
+                            <form action="/api/tienda/eliminar" method="post">
+                                <input type="text" name="padreId" hidden  value="<%=tienda.TiendaId%>">
+                                <a href="http://localhost:3000/api/tienda/gestion/<%=tienda.TiendaId%>">
+                                    <button type="button" class="btn btn-xs btn-info">Productos</button>
+                                </a>
+                            </form>
+                        </td>
+                    </tr>
+                <% })%>
+                </tbody>
+            </table>
+
+        </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
