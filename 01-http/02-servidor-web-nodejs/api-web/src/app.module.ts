@@ -12,7 +12,7 @@ import {ChatModule} from "./chat/chat.module";
 
 @Module({
     imports: [
-        /*TragosModule,
+        TragosModule,
         DistribuidorModule,
         FiestaModule,
         TypeOrmModule.forRoot({
@@ -31,7 +31,7 @@ import {ChatModule} from "./chat/chat.module";
             ],
             synchronize: true,
             dropSchema: false
-        }),*/
+        }),
         ChatModule
     ],
     controllers: [AppController],
